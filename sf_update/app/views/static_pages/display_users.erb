@@ -1,0 +1,37 @@
+
+<h1>SF Margin Reports</h1>
+
+	<div class="row-fluid">
+		<div class="span8">
+		<% @sf_margin_report.each do |report| %>
+		<table class='table table-bordered table-striped table-condensed'>
+		<tr>
+			<td>Report Id:</td>
+			<td><%= report.id %></td>
+		</tr>
+		<tr>
+			<td>User Id:</td> 
+			<td><%= report.user_id %></td>
+		</tr>
+		<tr>
+			<td>SF Record ID:</td>
+			<td><%= report.sf_record_id %></td>
+		</tr>
+		<tr>
+			<td>Margin Report URL:</td>
+			<td> <%= report.margin_report_url %></td>
+		</tr>
+		<tr>
+			<td>Created At:</td> 
+			<td><%= report.created_at %></td>
+		 <tr>
+		 	<td>Updated At:</td>
+		 	<td> <%= report.updated_at %></td>
+		 </tr>
+		 </table>
+		 <br>
+		<% end %>
+	</div>
+</div>
+
+

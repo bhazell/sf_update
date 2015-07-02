@@ -1,0 +1,14 @@
+
+<h1>Create</h1>
+
+<%= form_for(@sf_margin_report, url:create_sf_margin_report_path) do |f| %>
+	  <%= f.label :user_id %>
+      <%= f.text_field :user_id %>
+
+  	  <%= f.label :margin_report_url %>
+      <%= f.text_field :margin_report_url %>   
+
+      <br>
+      <br>
+      <%= f.submit "Create my account", class: "btn btn-primary" %>
+    <% end %>
